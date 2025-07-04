@@ -19,7 +19,7 @@ export default {
         
         // 处理根路径请求
         if (url.pathname === '/') {
-          return new Response({
+          return new Response('Not Found',{
   status: 404,
   statusText: 'Not Found'
 });
