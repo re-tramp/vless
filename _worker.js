@@ -19,7 +19,10 @@ export default {
         
         // 处理根路径请求
         if (url.pathname === '/') {
-          return new Response('VLESS Proxy Server', { status: 200 });
+          return new Response({
+  status: 404,
+  statusText: 'Not Found'
+});
         }
         
         // 处理 UUID 路径请求，返回配置信息
