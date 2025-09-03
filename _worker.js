@@ -37,7 +37,7 @@ let socks5Address = '';
  * When true: All traffic is proxied through SOCKS5
  * When false: Only Cloudflare IPs use SOCKS5
  */
-let socks5Relay = true;
+let socks5Relay = false;
 
 if (!isValidUUID(userID)) {
 	throw new Error('uuid is not valid');
