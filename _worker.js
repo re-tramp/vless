@@ -131,7 +131,7 @@ async function handleVLESSWebSocket(request) {
                 });
 
                 // 构造NAT64 IPv6地址：2001:67c:2960:6464::xxxx:xxxx
-                return `[2a00:1098:2c:1::${hex[0]}${hex[1]}:${hex[2]}${hex[3]}]`;
+                return `[2001:67c:2b0::${hex[0]}${hex[1]}:${hex[2]}${hex[3]}]`;
             }
 
             // 获取域名的IPv4地址并转换为NAT64 IPv6地址
